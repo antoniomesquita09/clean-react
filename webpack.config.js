@@ -44,7 +44,8 @@ module.exports = {
   devServer: {
     contentBase: './public', // dev server folder to watch
     writeToDisk: true,
-    historyApiFallback: true // for router dom
+    historyApiFallback: true, // for router dom
+    port: 8080
   },
   externals: { // exclude react and react-dom imports to bundle, we`ve already done this inside index.html manualy
     react: 'React',
